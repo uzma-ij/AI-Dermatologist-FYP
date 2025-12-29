@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    height: 100vh;
+   
+}
+.container >h1{
+    font-size: 64px;
+    margin-top: -170px; /* Moves it up */
+    color: #22204D;
+}
+
+.container >p{
+    color: black;
+    padding-bottom: 100px;
+}
+
+.container >button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height:70px;
+    border-radius: 20px;
+    background-color: #35CF63;
+    border:none;
+    font-size: 20px;
+}
+
+
+.uploadimg{
+    padding-right: 10px;
+        width: 30px;
+        height: 30px;
+}
+
+.container > button:hover{
+    background-color: white;
+    border: 2px solid #35CF63;
+}

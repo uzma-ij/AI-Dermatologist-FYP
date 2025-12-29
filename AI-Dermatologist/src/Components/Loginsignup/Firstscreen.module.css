@@ -1,0 +1,243 @@
+.pageContainer {
+  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.logoContainer {
+  margin-left: 40px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.logoIcon {
+  font-size: 28px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+}
+
+.logoLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 120px 40px 80px;
+  box-sizing: border-box;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.contentWrapper {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.headerSection {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mainHeading {
+  color: #101828;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+.gradientText {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  color: #475467;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.selectionbox {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  width: 100%;
+  max-width: 900px;
+  flex-wrap: wrap;
+}
+
+.selectionCard {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  border-radius: 24px;
+  border: 2px solid #eef2ff;
+  background-color: #ffffff;
+  box-shadow: 0 20px 45px rgba(15, 110, 255, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.selectionCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 50px rgba(15, 110, 255, 0.12);
+  border-color: #667eea;
+}
+
+.selectionCard.selected {
+  border: 2px solid #667eea;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  box-shadow: 0 20px 45px rgba(102, 126, 234, 0.15);
+}
+
+.iconContainer {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.selectionCard.selected .iconContainer {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.selectionCard h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #101828;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.selectionCard.selected h2 {
+  color: #667eea;
+}
+
+.selectionCard:hover h2 {
+  color: #667eea;
+}
+
+.actionSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.btn {
+  width: 280px;
+  height: 56px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn:disabled {
+  background: #d0d5dd;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.mylink {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.mylink span:first-child {
+  color: #475467;
+  font-size: 16px;
+}
+
+.loginLink {
+  color: #667eea;
+  font-weight: 600;
+  font-size: 16px;
+  transition: text-decoration 0.2s;
+}
+
+.mylink:hover .loginLink {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .mainHeading {
+    font-size: 36px;
+  }
+
+  .selectionbox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .selectionCard {
+    max-width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}

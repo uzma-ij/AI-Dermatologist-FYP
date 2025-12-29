@@ -1,0 +1,290 @@
+/* 
+.Navcontainer{
+    left :0;
+    top: 0;
+    width:100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    background-color: white; 
+}
+
+.navlink{
+   color: black;
+   text-decoration: none;
+   font-weight: 600;
+}
+
+.logo{
+    width: 155px;
+    height: 70px;
+    border: 2px solid #e96f51;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #212C67;
+    font-weight: bold;
+}
+ */
+
+ .header {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    color: #1a1a1a;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logoIcon {
+    font-size: 28px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .logo{
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+}
+  
+ 
+  
+  .navLinks a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .navLinks a.activeLink {
+    color: #667eea;
+    font-weight: 700;
+  }
+
+  .scrollLink {
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: #4a4a4a;
+  }
+
+  .scrollLink:hover {
+    color: #667eea;
+  }
+
+  .getStartedNavButton {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 60px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .getStartedNavButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  }
+
+  .badge {
+    position: absolute;
+    top: -8px;
+    right: -18px;
+    background: #e96f51;
+    color: #fff;
+    border-radius: 10px;
+    padding: 1px 6px;
+    font-size: 11px;
+    line-height: 1.4;
+    font-weight: 700;
+  }
+  
+  .authSection {
+    display: flex;
+    align-items: center;
+    margin-right: 90px;
+  }
+
+  .buttonGroup {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .userInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profileColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    min-width: fit-content;
+  }
+  .authButton {
+    background-color: transparent;
+    color: #4a4a4a;
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .authButton:hover {
+    background-color: #f5f5f5;
+    border-color: #667eea;
+    color: #667eea;
+  }
+  
+  .profilePic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+  }
+  
+  .username {
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+
+  /* new */
+  .popupMenu {
+    position: absolute;
+    top: 50px; 
+    left: 50%;  
+    transform: translateX(-50%);  
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    width: 150px;  
+    
+}
+
+.logoutPopup {
+  width: 100px;
+  padding: 8px;
+}
+
+
+.popupText {
+  display: block;
+  text-align: center;
+  color: #007bff;
+  cursor: pointer;
+ 
+  font-weight: 500;
+}
+
+
+.popupText:hover {
+    color: #0056b3;
+}
+
+.profilePic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  user-select: none;
+}
+
+/* Notification Icon Styles */
+.notificationIcon {
+  position: relative;
+  transition: all 0.2s ease;
+  padding: 10px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+}
+
+.notificationBell {
+  color: #667eea;
+  transition: all 0.2s ease;
+}
+
+.notificationIcon:hover {
+  transform: translateY(-2px);
+  background-color: rgba(102, 126, 234, 0.1);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+.notificationIcon:hover .notificationBell {
+  color: #764ba2;
+}
+
+.notificationBadge {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: linear-gradient(135deg, #e96f51 0%, #f56565 100%);
+  color: #fff;
+  border-radius: 12px;
+  padding: 3px 7px;
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 700;
+  min-width: 18px;
+  height: 18px;
+  text-align: center;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 8px rgba(233, 111, 81, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoLink {
+  text-decoration: none;
+  color: inherit; /* Keeps original text color */
+}

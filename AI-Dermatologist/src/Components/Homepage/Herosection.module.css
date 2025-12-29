@@ -1,0 +1,370 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #ffffff 0%, #f0f4f8 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 50px 80px;
+    box-sizing: border-box;
+}
+
+.contentWrapper {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.leftContent {
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #e3f2fd;
+    color: #1976d2;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    width: fit-content;
+}
+
+.badgeIcon {
+    font-size: 16px;
+}
+
+.headline {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.gradientText {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #4a4a4a;
+    margin: 0;
+}
+
+.getStartedButton {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    width: fit-content;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.getStartedButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.rightContent {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.imageContainer {
+    width: 80%;
+    max-width: 650px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.carouselWrapper {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+    width: 100%;
+}
+
+.aiAnalysisImage {
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    max-width: 600px;
+    border-radius: 12px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.deviceMockups {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    height: 600px;
+}
+
+.tabletMockup {
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    background: #1a1a1a;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tabletScreen {
+    width: 100%;
+    height: 100%;
+    background: #2d2d2d;
+    border-radius: 12px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.tabletContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.searchBar {
+    width: 100%;
+    height: 40px;
+    background: #3a3a3a;
+    border-radius: 8px;
+}
+
+.widgets {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+}
+
+.widget {
+    background: #3a3a3a;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.widgetHeader {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.widgetStats {
+    color: #aaa;
+    font-size: 12px;
+    display: flex;
+    gap: 15px;
+}
+
+.widgetContent {
+    color: #aaa;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.circularProgress {
+    background: #3a3a3a;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.progressValue {
+    color: #667eea;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.progressNumber {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.phoneMockupLeft {
+    position: absolute;
+    width: 180px;
+    height: 320px;
+    background: #1a1a1a;
+    border-radius: 25px;
+    padding: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    left: 10%;
+    top: 20%;
+    transform: rotate(-5deg);
+}
+
+.phoneMockupRight {
+    position: absolute;
+    width: 180px;
+    height: 320px;
+    background: #1a1a1a;
+    border-radius: 25px;
+    padding: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    right: 10%;
+    top: 20%;
+    transform: rotate(5deg);
+}
+
+.phoneScreen {
+    width: 100%;
+    height: 100%;
+    background: #2d2d2d;
+    border-radius: 18px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.phoneHeader {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.phoneContent {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scanCircle {
+    width: 120px;
+    height: 120px;
+    border: 4px solid #667eea;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(102, 126, 234, 0.1);
+}
+
+.scanText {
+    color: #667eea;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.scanTime {
+    color: #aaa;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.phoneNav {
+    height: 50px;
+    background: #3a3a3a;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+@media (max-width: 1200px) {
+    .contentWrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .headline {
+        font-size: 48px;
+    }
+
+    .deviceMockups {
+        height: 500px;
+    }
+
+    .tabletMockup {
+        width: 400px;
+        height: 280px;
+    }
+
+    .phoneMockupLeft,
+    .phoneMockupRight {
+        width: 150px;
+        height: 270px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 100px 20px 60px;
+    }
+
+    .headline {
+        font-size: 36px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .imageContainer {
+        max-width: 100%;
+    }
+
+    .carouselWrapper {
+        width: 100%;
+    }
+
+    .aiAnalysisImage {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .deviceMockups {
+        height: 400px;
+    }
+
+    .tabletMockup {
+        width: 300px;
+        height: 210px;
+    }
+
+    .phoneMockupLeft,
+    .phoneMockupRight {
+        width: 120px;
+        height: 210px;
+    }
+}

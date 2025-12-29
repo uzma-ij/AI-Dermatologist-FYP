@@ -1,0 +1,117 @@
+.container{
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.lefthalf {
+    width: 50%;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+
+    width: 60%;
+    height: auto;
+
+}
+
+.lefthalf h1{
+    margin-top: -100px;
+    color: #0B87CA;
+  
+}
+
+.lefthalf p{
+    color:#115C6F;
+    margin-left: -230px;
+}
+
+.righthalf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;/*center vertically */
+    
+    font-weight: normal;
+    width: 50%;
+}
+
+.loginheading {
+    margin-top: 50px;
+    font-size: 64px;
+    color: #22204D;
+
+}
+
+.inputfields{
+    font-size: 20px;
+    width: 563px;
+    height: 55px;
+    border: 1px solid #7F7F7F;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
+}
+
+.passworddiv {
+    margin-top: 30px;
+}
+
+.subheadings {
+    font-size: 20px;
+    font-weight: normal;
+    font-style: sans-serif;
+    margin-bottom: 0px;
+
+
+}
+
+
+.forgotpassword {
+    font-size: 20px;
+    font-weight: normal;
+    font-style: sans-serif;
+    color: green;
+    text-decoration: none;
+    padding-left: 420px;
+}
+
+.btn {
+   background-color: #4836CE;
+    margin-top: 40px;
+    margin-left: 3px;
+    width: 563px;
+    height: 60px;
+    border: 1px solid  #4836CE;
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: sans-serif;
+    cursor: pointer;
+}
+
+.form{
+      display: flex;
+      flex-direction: column;
+}
+
+
+
+.signup{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 140px;
+    margin-top: 20px;
+    
+}
+
+.signup span{
+    color: green;
+}
