@@ -1,0 +1,56 @@
+services:
+  flask:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile-flask
+    container_name: ai-dermatologist-flask
+    ports:
+      - "5001:5001"
+    networks:
+      - dermatologist-network
+
+  backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile-backend
+      tags:
+      - "ai-dermatologist-backend:v1"
+    container_name: ai-dermatologist-backend
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+      - CLIENT_URL=http://localhost:3000
+      - FLASK_URL=http://flask:5001
+    volumes:
+      - ./server/.env:/app/.env:ro
+    depends_on:
+      - flask
+    networks:
+      - dermatologist-network
+
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile-frontend
+      args:
+        - REACT_APP_SUPABASE_URL=${REACT_APP_SUPABASE_URL}
+        - REACT_APP_SUPABASE_ANON_KEY=${REACT_APP_SUPABASE_ANON_KEY}
+      tags:
+      - "ai-dermatologist-frontend:v2"
+    container_name: ai-dermatologist-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:5000
+      - REACT_APP_FLASK_URL=http://localhost:5001
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+    depends_on:
+      - backend
+    networks:
+      - dermatologist-network
+
+networks:
+  dermatologist-network:
+    driver: bridge

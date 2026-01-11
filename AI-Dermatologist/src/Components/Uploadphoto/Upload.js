@@ -92,7 +92,8 @@ export default function Upload({user}) {
     setError("");
     setResult(null);
 
-    const res = await fetch("http://127.0.0.1:5000/predict", {
+    const flaskUrl = process.env.REACT_APP_FLASK_URL || "http://127.0.0.1:5001";
+    const res = await fetch(`${flaskUrl}/predict`, {
       method: "POST",
       body: formData,
     });
