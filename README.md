@@ -11,4 +11,11 @@ patient queries.
 - **Live Chat with Doctor:** Patients can communicate directly with doctors through live chat to discuss their concerns.
 - **Notifications:** Users receive updates about appointments, messages, and other important activities within the application.
 - **Reviews and Ratings:** Patients can view and give reviews and ratings to dermatologists upon successful completion of appointments.
-
+# Technologies Used:
+**React.js:** For frontend development. 
+**Node.js / Express.js / Flask:** For backend development.
+**Skin Disease Dataset:** From Kaggle. 
+**Supabase:** Database management.  
+**Visual Studio Code:** For development (IDE).  
+**Git & GitHub:** For version control.
+**Gemini API:** For AI-based assistance.
